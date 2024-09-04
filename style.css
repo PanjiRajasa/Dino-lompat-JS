@@ -1,0 +1,86 @@
+
+@keyframes run{
+    0%{
+        background: url('asset/run1.png');
+        background-size: 100% 100%;
+    }
+    10%{
+        background: url('asset/run2.png');
+        background-size: 100% 100%;
+    }
+    30%{
+        background: url('asset/run3.png');
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url('asset/run4.png');
+        background-size: 100% 100%;
+    }
+    60%{
+        background: url('asset/run5.png');
+        background-size: 100% 100%;
+    }
+    70%{
+        background: url('asset/run6.png');
+        background-size: 100% 100%;
+    }
+    80%{
+        background: url('asset/run7.png');
+        background-size: 100% 100%;
+    }
+    90%{
+        background: url('asset/run8.png');
+        background-size: 100% 100%;
+    }
+}
+h2,h3{
+    text-align: center;
+}
+
+#background{ 
+    width: 600px;
+    height: 400px; 
+    background: url('asset/bg.jpg');
+    background-size: 100%;
+    background-repeat: repeat-x;
+    margin: auto;
+}
+#area{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+}
+#character{
+    width: 100px;
+    height: 100px;
+    background: url('asset/run1.png');
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 223px;
+    margin-left: 50px;
+    animation: run 0.3s infinite;
+    transition: 0.5s;
+}
+#character.freeze{
+    animation: none;
+    background: url('asset/run8.png');
+    background-size: 100% 100%;
+}
+#box{
+    width: 45px;
+    height: 45px;
+    margin-top: 110px;
+    margin-left: 600px;
+    background: url('asset/bird.png');
+    background-size: 100% 100%;
+}
+
+#box2 {
+    width: 45px;
+    height: 45px;
+    margin-top: 108px;
+    margin-left: 800px;
+    background: url('asset/redbox.png');
+    background-size: 100% 100%;
+}
