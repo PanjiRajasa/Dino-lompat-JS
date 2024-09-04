@@ -128,7 +128,7 @@ function setBoxMoving() {
 
     ) {
       alert(
-        "GAME OVER 🤫🧏🏻 maaf ya sigma gyatt rizzlet :(, score anda: " +
+        "GAME OVER ): Semoga Beruntung Di Lain Waktu! Score anda: " +
           document.querySelector("#score").innerHTML
       );
 
