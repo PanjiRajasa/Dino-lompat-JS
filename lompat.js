@@ -92,16 +92,11 @@ function setBoxMoving() {
 
     //kita setting style margin left dari box dengan metode yang sama seperti saat kita setting style backgroundPosition
     box.style.marginLeft =
-      parseInt(box.style.marginLeft.replace("px", "") - 2) + "px";
+      parseInt(box.style.marginLeft.replace("px", "") - 1.5) + "px";
 
     box2.style.marginLeft =
     parseInt(box2.style.marginLeft.replace("px", "") - 1.5) + "px";
 
-
-
-    //kita setting style margin left dari box dengan metode yang sama seperti saat kita setting style backgroundPosition
-    box2.style.marginLeft =
-      parseInt(box2.style.marginLeft.replace("px", "") - 1.5) + "px";
 
 
       
@@ -110,7 +105,7 @@ function setBoxMoving() {
     //disini kita menetapkan -100 sebagai batas maksimal object rintangan gerak ke kiri artinya kalau posisinya udh lebih -100 dia bakal kita balikin lagi ke posisi 600px
     if (parseInt(box.style.marginLeft.replace("px", "")) < -100) {
       box.style.marginLeft = "600px";
-      box2.style.marginLeft = "800px";
+      box2.style.marginLeft = "740px";
     }
     //untuk mendeteksi collision
     if (
